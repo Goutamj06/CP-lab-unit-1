@@ -1,20 +1,26 @@
-C Program to print multiplication Table
-
-
-
+//p6 number comparision 
 #include <stdio.h>
 
 int main() {
-    int num, i;
 
-    printf("Enter a number: ");
-    scanf("%d", &num);
+int a, b;
 
-    printf("\nMultiplication Table of %d\n", num);
+printf("Enter two numbers: ");
 
-    for(i = 1; i <= 10; i++) {
-        printf("%d x %d = %d\n", num, i, num * i);
-    }
+scanf("%d%d", &a, &b);
 
-    return 0;
+if(a > b)
+
+printf("%d is biggest", a);
+
+else if(b > a)
+
+printf("%d is biggest", b);
+
+else
+
+printf("Both numbers are equal");
+
+return 0;
+
 }
