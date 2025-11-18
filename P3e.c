@@ -1,24 +1,17 @@
-C Program for Increment/Decrement Operator
+//(3e) logical operator program
 
- #include <stdio.h>
-
-int main() {
-    int a;
-
-    printf("Enter a number: ");
-    scanf("%d", &a);
-
-    printf("\nOriginal value of a = %d\n", a);
- 
-    printf("After pre-increment (++a): %d\n", ++a);
- 
-    printf("After post-increment (a++): %d\n", a++);
-    printf("Value after post-increment is executed: %d\n", a);
- 
-    printf("After pre-decrement (--a): %d\n", --a);
-
-    printf("After post-decrement (a--): %d\n", a--);
-    printf("Value after post-decrement is executed: %d\n", a);
-
-    return 0;
+#include<stdio.h>
+void main()
+{
+    int a=0,b=5;
+    printf("a&&b %d\n",a&&b);
+    printf("a||b %d\n",a||b);
+    printf("!a %d\n",!a);
+    printf("!b %d\n",!b);
 }
+
+output 
+a&&b 0
+a||b 1
+!a 1
+!b 0
