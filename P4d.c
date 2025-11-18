@@ -1,16 +1,16 @@
-C Program for Conditional Operator
-
- #include <stdio.h>
-
-int main() {
-    int a, b, max;
-
-    printf("Enter two numbers: ");
-    scanf("%d %d", &a, &b);
-
-    max = (a > b) ? a : b;
-
-    printf("\nThe greater number is: %d\n", max);
-
-    return 0;
+//(4d)c program to finding positivity of the number
+#include<stdio.h>
+void main()
+{
+    int a;
+    printf("enter a");
+    scanf("%d",&a);
+    if(a>0)
+        printf("a is positive ");
+    
 }
+
+output
+
+enter a23
+a is positive 
