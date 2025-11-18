@@ -1,20 +1,24 @@
-C Program to print multiplication Table
-
-
-
-#include <stdio.h>
+//7.#include <stdio.h>
 
 int main() {
-    int num, i;
 
-    printf("Enter a number: ");
-    scanf("%d", &num);
+int a;
 
-    printf("\nMultiplication Table of %d\n", num);
+printf("Enter a: ");
 
-    for(i = 1; i <= 10; i++) {
-        printf("%d x %d = %d\n", num, i, num * i);
-    }
+scanf("%d",&a);
 
-    return 0;
+if(a % 2 == 0) {
+
+printf("%d is even\n", a);
+
+} else {
+
+printf("%d is odd\n", a);
+
+}
+
+return 0;
+
+
 }
