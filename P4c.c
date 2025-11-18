@@ -1,16 +1,26 @@
-C Program for Conditional Operator
-
- #include <stdio.h>
-
+//(4c)find the largest of three numbers
+#include <stdio.h>
 int main() {
-    int a, b, max;
+    int a, b, c;
 
-    printf("Enter two numbers: ");
-    scanf("%d %d", &a, &b);
+    printf("Enter three numbers: ");
+    scanf("%d %d %d", &a, &b, &c);
 
-    max = (a > b) ? a : b;
+    if (a >= b && a >= c) {
+        printf("%d is the largest number.\n", a);
+    }
+    else if (b >= a && b >= c) {
+        printf("%d is the largest number.\n", b);
+    }
+    else {
+        printf("%d is the largest number.\n", c);
+    }
 
-    printf("\nThe greater number is: %d\n", max);
-
-    return 0;
+return 0;
 }
+
+output
+Enter three numbers: 5
+6
+8
+8 is the largest number.
