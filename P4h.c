@@ -1,20 +1,25 @@
-C Program to print multiplication Table
-
-
+// 4h.sum of n natural numbers using do while loop
 
 #include <stdio.h>
 
 int main() {
-    int num, i;
 
-    printf("Enter a number: ");
-    scanf("%d", &num);
+int n, sum = 0, i = 1;
 
-    printf("\nMultiplication Table of %d\n", num);
+printf("Enter n: ");
 
-    for(i = 1; i <= 10; i++) {
-        printf("%d x %d = %d\n", num, i, num * i);
-    }
+scanf("%d", &n);
 
-    return 0;
+do {
+
+sum += i;
+
+i++;
+
+} while(i <= n);
+
+printf("Sum = %d", sum);
+
+return 0;
+
 }
