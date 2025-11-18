@@ -1,20 +1,25 @@
-C Program to print multiplication Table
-
-
-
-#include <stdio.h>
+//8.factorial
+#include<stdio.h>
+void factorial(); 
 
 int main() {
-    int num, i;
-
+    factorial();
+    return 0;
+}
+void factorial() {
+    int n, i;
+    long long fact = 1;  
     printf("Enter a number: ");
-    scanf("%d", &num);
+    scanf("%d", &n);
 
-    printf("\nMultiplication Table of %d\n", num);
-
-    for(i = 1; i <= 10; i++) {
-        printf("%d x %d = %d\n", num, i, num * i);
+    if (n < 0) {
+        printf("Factorial is not defined for negative numbers.\n");
+        return;
     }
 
-    return 0;
+    for (i = 1; i <= n; i++) {
+        fact = fact * i;
+    }
+
+    printf("Factorial of %d = %lld\n", n, fact);
 }
