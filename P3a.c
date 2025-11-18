@@ -1,35 +1,26 @@
+//(3a)c program to perform arithmetic operatin
 #include <stdio.h>
 
-int main() {
-    int i;
-    float f;
-    double d;
-    char c;
-    char str[50];
+int main()
+{
+    int a=10,b=6,sum,diff,mult,div,mod;
+    sum=a+b;
+    printf("sum= %d\n",sum);
+    diff=a-b;
+    printf("diff= %d\n",diff);
+    mult=a*b;
+    printf("mult= %d\n",mult);
+    div=a/b;
+    printf("div= %d\n",div);
+    mod=a%b;
+    printf("mod= %d\n",mod);
+    return 0;
 
-    
-    printf("Enter an integer: ");
-    scanf("%d", &i);
-
-    printf("Enter a float value: ");
-    scanf("%f", &f);
-
-    printf("Enter a double value: ");
-    scanf("%lf", &d);
-
-    printf("Enter a character: ");
-    scanf(" %c", &c); 
-
-    printf("Enter a string (no spaces):");
-    scanf("%s", str);
-
-   
-    printf("\n--- Displaying Entered Values ---\n");
-    printf("Integer: %d\n", i);
-    printf("Float: %.2f\n", f);
-    printf("Double: %.4lf\n", d);
-    printf("Character: %c\n", c);
-    printf("String: %s\n", str);
-
-    return 0;
 }
+
+output
+sum= 16
+diff= 4
+mult= 60
+div= 1
+mod= 4
